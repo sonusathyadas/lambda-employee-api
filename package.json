@@ -9,5 +9,8 @@
     "express": "^4.17.1",
     "serverless-http": "^2.7.0",
     "swagger-ui-express": "^4.3.0"
+  },
+  "scripts": {
+      "start": "node index.js"
   }
 }
