@@ -12,9 +12,9 @@ app.use(cors())
 
 
 //Swagger
-if (["production","staging"].indexOf(process.env.NODE_ENV) == -1) {
+//if (["production","staging"].indexOf(process.env.NODE_ENV) == -1) {
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, { explorer: true }));
-}
+//}
 
 //configure routes
 app.use("/employees", require('./routes/employee-routes'));
